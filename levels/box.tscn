@@ -1,8 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://bprke8vyw5ykv"]
+[gd_scene load_steps=3 format=3 uid="uid://bprke8vyw5ykv"]
 
 [ext_resource type="Texture2D" uid="uid://c3wgpnq7m11rq" path="res://media/Untitled 02-06-2025 07-14-59.png" id="1_xlutm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xlutm"]
+size = Vector2(16, 16)
 
 [node name="box" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_xlutm")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+shape = SubResource("RectangleShape2D_xlutm")
