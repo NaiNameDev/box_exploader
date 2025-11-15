@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ct3esyb15tcar" path="res://levels/character_body_2d.gd" id="1_72lju"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nfdnw"]
+height = 20.0
 
 [sub_resource type="SphereMesh" id="SphereMesh_nfdnw"]
 
@@ -12,6 +13,7 @@
 script = ExtResource("1_72lju")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, 1)
 shape = SubResource("CapsuleShape2D_nfdnw")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="CharacterBody2D"]
