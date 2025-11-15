@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://dos7wibqu5kbo"]
+
+[ext_resource type="Script" uid="uid://ct3esyb15tcar" path="res://levels/character_body_2d.gd" id="1_72lju"]
+[ext_resource type="Script" path="res://levels/area_2d.gd" id="2_lkjt4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nfdnw"]
+height = 20.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_nfdnw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_lkjt4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_72lju"]
+size = Vector2(13, 12)
+
+[node name="test" type="Node2D"]
+position = Vector2(546, 286)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_72lju")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-1, 0)
+shape = SubResource("CapsuleShape2D_nfdnw")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="CharacterBody2D"]
+position = Vector2(1, 0)
+scale = Vector2(18.02041, 17.000004)
+mesh = SubResource("SphereMesh_nfdnw")
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_lkjt4")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="Area2D"]
+scale = Vector2(13.000033, 11.99999)
+mesh = SubResource("BoxMesh_lkjt4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(1.0000002, 1)
+shape = SubResource("RectangleShape2D_72lju")
