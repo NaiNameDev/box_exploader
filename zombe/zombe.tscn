@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ce6ypeoisvexd"]
 
 [ext_resource type="Texture2D" uid="uid://vo2wyymp4isk" path="res://icon.svg" id="1_1oq4s"]
-[ext_resource type="Script" uid="uid://dfqgqeud8wu8i" path="res://levels/zombe.gd" id="1_arhlq"]
+[ext_resource type="Script" uid="uid://dfqgqeud8wu8i" path="res://zombe/zombe.gd" id="1_arhlq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_arhlq"]
 size = Vector2(128, 128)

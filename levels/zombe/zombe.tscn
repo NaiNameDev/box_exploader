@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://661i8nb621hp"]
+
+[ext_resource type="Script" uid="uid://dfqgqeud8wu8i" path="res://zombe/zombe.gd" id="1_toq1s"]
+[ext_resource type="Texture2D" uid="uid://vo2wyymp4isk" path="res://icon.svg" id="2_rtwng"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_arhlq"]
+size = Vector2(128, 128)
+
+[node name="zombe" type="Node2D"]
+
+[node name="zombe" type="CharacterBody2D" parent="."]
+script = ExtResource("1_toq1s")
+
+[node name="Sprite2D" type="Sprite2D" parent="zombe"]
+texture = ExtResource("2_rtwng")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="zombe"]
+shape = SubResource("RectangleShape2D_arhlq")
