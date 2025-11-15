@@ -7,7 +7,7 @@ var have_box = false
 func _physics_process(delta):
   # Получаем input vector (ввод игрока)
   var direction: Vector2 = Input.get_vector("left","right","up","down")
-  
+
   # Рассчитываем новую скорость
   velocity = direction * speed
   
