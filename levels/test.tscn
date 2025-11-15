@@ -29,6 +29,7 @@ scale = Vector2(18.02041, 17.000004)
 mesh = SubResource("SphereMesh_nfdnw")
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-1, 9)
 script = ExtResource("2_lkjt4")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Area2D"]
