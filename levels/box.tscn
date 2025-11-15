@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bprke8vyw5ykv"]
 
-[ext_resource type="Texture2D" uid="uid://c3wgpnq7m11rq" path="res://img/Untitled 02-06-2025 07-14-59.png" id="1_xlutm"]
+[ext_resource type="Texture2D" uid="uid://c3wgpnq7m11rq" path="res://media/Untitled 02-06-2025 07-14-59.png" id="1_xlutm"]
 
 [node name="box" type="Node2D"]
 
