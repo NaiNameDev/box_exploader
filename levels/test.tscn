@@ -20,11 +20,11 @@ position = Vector2(546, 286)
 script = ExtResource("1_72lju")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-1, 0)
+position = Vector2(59, 17)
 shape = SubResource("CapsuleShape2D_nfdnw")
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="CharacterBody2D"]
-position = Vector2(1, 0)
+position = Vector2(59, 17)
 scale = Vector2(18.02041, 17.000004)
 mesh = SubResource("SphereMesh_nfdnw")
 
