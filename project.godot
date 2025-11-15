@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="box_expolder"
+run/main_scene="uid://dos7wibqu5kbo"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
